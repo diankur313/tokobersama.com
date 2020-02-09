@@ -12,11 +12,6 @@ class database{
 		// membuat koneksi
 		$connect = mysql_connect($this->host, $this->uname, $this->pass);
 			   	   mysql_select_db($this->db);
-			   	   
-		//cek koneksi
-		if ($connect->connect_error){
-	    die("Connection failed: " . $connect->connect_error);
-		}
 	}
 
 	
